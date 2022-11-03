@@ -1,19 +1,30 @@
-import {RollupOptions} from "rollup";
+import {RollupOptions} from 'rollup';
+import typescript from '@rollup/plugin-typescript';
 
 export default {
-    input: 'index.js',
-    output: [{
-        dir: 'dist/cjs',
-        format: 'cjs'
-    },{
-        dir: 'dist/amd',
-        format: 'amd'
-    },{
-        dir: 'dist/es',
-        format: 'es'
-    },{
-        dir: 'dist/umd',
-        format: 'umd',
-        name: 'mylibrarytut'
-    }]
-} as RollupOptions
+    input: 'src/index.ts',
+    output: [
+        {
+            dir: 'dist/cjs',
+            format: 'cjs',
+        },
+        {
+            dir: 'dist/amd',
+            format: 'amd',
+        },
+        {
+            dir: 'dist/es',
+            format: 'es',
+        },
+        {
+            dir: 'dist/umd',
+            format: 'umd',
+            name: 'mylibrarytut',
+        },
+        {
+            dir: 'dist/iife',
+            format: 'iife',
+        },
+    ],
+    plugins: [typescript()],
+} as RollupOptions;

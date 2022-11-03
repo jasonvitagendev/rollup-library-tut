@@ -3,8 +3,6 @@
         "baseUrl": "src",
         "strict": true,
         "declaration": true,
-        "outDir": "dist",
-        "allowSyntheticDefaultImports": true
-    },
-    "include": ["src/**/*", "rollup.config.ts"]
+        "outDir": "dist"
+    }
 }

@@ -4,26 +4,27 @@ import typescript from '@rollup/plugin-typescript';
 export default {
     input: 'src/index.ts',
     output: [
+        {
+            dir: 'dist',
+            format: 'cjs',
+        },
         // {
         //     dir: 'dist',
-        //     format: 'cjs',
-        // },
-        // {
-        //     dir: 'dist/amd',
         //     format: 'amd',
         // },
         // {
-        //     dir: 'dist/es',
+        //     dir: 'dist',
         //     format: 'es',
         // },
-        {
-            dir: 'dist',
-            format: 'umd',
-            name: 'mylibrarytut',
-        },
         // {
-        //     dir: 'dist/iife',
+        //     dir: 'dist',
+        //     format: 'umd',
+        //     name: 'mylibrarytut',
+        // },
+        // {
+        //     dir: 'dist',
         //     format: 'iife',
+        //     name: 'mylibrarytut',
         // },
     ],
     plugins: [typescript()],

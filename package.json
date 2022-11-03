@@ -1,0 +1,10 @@
+{
+    "name": "rollup-library-tut",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jasonvitagendev/rollup-library-tut.git"
+    },
+    "main": "./dist/umd/index.js",
+    "module": "./dist/es/index.js"
+}

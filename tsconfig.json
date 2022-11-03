@@ -3,6 +3,7 @@
         "baseUrl": "src",
         "strict": true,
         "declaration": true,
-        "outDir": "dist",
+        "outDir": "dist"
     },
+    "include": ["src/**/*", "rollup.config.ts"]
 }

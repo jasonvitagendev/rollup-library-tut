@@ -2,5 +2,7 @@
     "compilerOptions": {
         "baseUrl": "src",
         "strict": true,
-    }
+        "declaration": true,
+        "outDir": "dist",
+    },
 }
